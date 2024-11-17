@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="">
+    <meta name="description" content="side description">
+    <meta name="keywords" content="blog">
+      <meta name="robots"content="index,follow">
+       <meta name="language" content="English"> 
+       <meta name="revisit-after"content="7 days">
+        <meta name="author"content="Marium islam">
+         <title>Java Script</title>
+         <!-- icons -->
+         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+     <link rel="stylesheet" href="icons/fontawesome/css/all.min.css">
+     <link rel="stylesheet" href="icons/pe-7-stroke/css/pe-icon-7-stroke.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+       
+      </head>
+      <body>
+        <div class="body">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+<h1>CLICK</h1>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<h1>DCLICK</h1>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you double-click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+    <div><hr></div>
+    <div class="images mb-4">
+        <img src="images/img.png" class="img-fluid sky">
+    </div>
+    <button class="btn btn-primary b1">pic1</button>
+      <div><hr></div>
+    <h2>click the button to show alert</h2>
+    <button class="btn btn-primary btn_alert">show alert</button>
+
+        <div><hr></div>
+    <h3>input value collect using .val() method</h3>
+    <input type="text" class="name" placeholder="Name">
+    <button type="submit" class="btn btn-primary btn_val">Submit</button>
+    <p class="value_print"></p>
+      <div><hr></div>
+
+  <button class="btn btn-primary btn_slide1">click the button to slide down</button>
+
+  <p class="slide_2">Consetetur aliquyam sea voluptua et et. Amet tempor justo sit duo sed gubergren, elitr sadipscing dolores diam no et erat ea clita. Elitr sea lorem no ipsum lorem sanctus tempor clita lorem. Lorem magna lorem ut aliquyam labore dolore magna, sed at duo voluptua est sed sit, diam amet sadipscing.Stet no est dolor magna et ipsum labore dolore, sea kasd et no ipsum elitr at. Et nonumy eirmod ea sit amet. Sit sea et duo sanctus vero dolores eirmod ut ut. Ea sed et et ut ipsum clita. Rebum lorem est voluptua et amet. Et justo tempor amet duo.</p>
+   <div><hr></div>
+
+  <button class="btn btn-primary btn_slide2">click the button to slide toggle</button>
+
+  <p class="slide_3">Consetetur aliquyam sea voluptua et et. Amet tempor justo sit duo sed gubergren, elitr sadipscing dolores diam no et erat ea clita. Elitr sea lorem no ipsum lorem sanctus tempor clita lorem. Lorem magna lorem ut aliquyam labore dolore magna, sed at duo voluptua est sed sit, diam amet sadipscing.Stet no est dolor magna et ipsum labore dolore, sea kasd et no ipsum elitr at. Et nonumy eirmod ea sit amet. Sit sea et duo sanctus vero dolores eirmod ut ut. Ea sed et et ut ipsum clita. Rebum lorem est voluptua et amet. Et justo tempor amet duo.</p>
+    <div><hr></div>
+    <h1 class="c_color">Awsome</h1>
+    <button class="btn btn-primary colorBtn">Change the color to blue</button>
+
+    <script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $("span").css("display", "inline").fadeOut(2000);
+  });
+});
+</script>
+<style>
+span {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<input>
+
+<span>Nice to meet you!</span>
+<p>Click in the input field to get focus.</p>
+<script>
+$(document).ready(function(){
+  $("p").hover(function(){
+    $(this).css("background-color", "yellow");
+    }, function(){
+    $(this).css("background-color", "pink");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Hover the mouse pointer over this paragraph.</p>
+<script>
+$(document).ready(function(){
+  $("p").on("click", function(){
+    $(this).css("background-color", "pink");
+  });
+  $("button").click(function(){
+    $("p").off("click");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Click this paragraph to change its background color.</p>
+<p>Click the button below and then click on this paragraph (the click event is removed).</p>
+
+<button>Remove the click event handler</button>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#box").animate({height: "300px"});
+  });
+  $("#btn2").click(function(){
+    $("#box").animate({height: "100px"});
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+   
+        <!-- script links -->
+        <script src="htttps://kit.fontawesome.com/774c334e86.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.css"></script>
+  </div>
+
+</body>
+
+</html>
